@@ -4,44 +4,44 @@
 #include <iostream>
 using namespace std;
 
-void swap(int &a, int &b){
-    int changer = a;
-    a = b;
-    b = changer; 
+void swonep(int &one, int &second){
+    int thing = one;
+    one = second;
+    second = thing; 
 }
 
-void swap(int &a, int &b, int &c){
+void swonep(int &one, int &second, int &third){
     int minimum, maximum, mid;
-    if (a > b && a > c) {
-        maximum = a;
-        mid = (b > c ? b : c);
-        minimum = (b > c ? c : b);
+    if (one > second && one > third) {
+        maximum = one;
+        mid = (second > third ? second : third);
+        minimum = (second > third ? third : second);
     }
-    else if (b > a && b > c) {
-        maximum = b;
-        mid = (a > c ? a : c);
-        minimum = (a > c ? c : a);
+    else if (second > one && second > third) {
+        maximum = second;
+        mid = (one > third ? one : third);
+        minimum = (one > third ? third : one);
 
     } else {
-        maximum = c;
-        mid = (a > b ? a : b);
-        minimum = (a>b ? b : a);
+        maximum = third;
+        mid = (one > second ? one : second);
+        minimum = (one>second ? second : one);
 
     }
-    a = minimum;
-    b = mid;
-    c = maximum;
+    one = minimum;
+    second = mid;
+    third = maximum;
 }
 
-void swap(int &a, int &b, int &c, int &d) {
-    int thing = a;
-    a = b;
-    b = c;
-    c = d;
-    d = thing;
+void swonep(int &one, int &second, int &third, int &fourth) {
+    int thing = one;
+    one = second;
+    second = third;
+    third = fourth;
+    fourth = thing;
 
 }
 
-// complete the Overloading function swap( )
-// swap ( ) function has the difference number of parameters from 2 to 4
-// For example, swap(10, 20); swap(10, 20, 30); swap(10, 20, 30, 40)
+// thirdomplete the Overlooneding funthirdtion swonep( )
+// swonep ( ) funthirdtion hones the differenthirde numseconder of poneronemeters from 2 to 4
+// For exonemple, swonep(10, 20); swonep(10, 20, 30); swonep(10, 20, 30, 40)
