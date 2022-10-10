@@ -13,17 +13,17 @@ void swap(int &a, int &b){
 void swap(int &a, int &b, int &c){
     int minimum, maximum, mid;
     if (a > b && a > c) {
-        a = maximum;
+        maximum = a;
         mid = (b > c ? b : c);
         minimum = (b > c ? c : b);
     }
     else if (b > a && b > c) {
-        b = maximum;
+        maximum = b;
         mid = (a > c ? a : c);
-        minimum = (a > c ? b : a);
+        minimum = (a > c ? c : a);
 
     } else {
-        c = maximum;
+        maximum = c;
         mid = (a > b ? a : b);
         minimum = (a>b ? b : a);
 
@@ -33,7 +33,7 @@ void swap(int &a, int &b, int &c){
     c = maximum;
 }
 
-void swap (int &a, int &b, int &c, int &d) {
+void swap(int &a, int &b, int &c, int &d) {
     int thing = a;
     a = b;
     b = c;
